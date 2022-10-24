@@ -41,6 +41,11 @@
                 <i class="fa fa-instagram" aria-hidden="true"></i>
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
             </div>
+            <div class="price">
+                <span>3</span>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+            
+            </div>
 
             <!-- video -->
         <video src="./images/coffe video.mp4" muted loop autoplay></video>
@@ -53,8 +58,8 @@
                 <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>home</a></li>
                 <li><a href="#about"><i class="fa fa-coffee" aria-hidden="true"></i>about</a></li>
                 <li><a href="#form"><i class="fa fa-file-text-o" aria-hidden="true"></i>request yours</a></li>
-                <li><a href="#rward"><i class="fa fa-trophy" aria-hidden="true"></i>reword</a></li>
-                <li><a href="#contact"><i class="fa fa-comment" aria-hidden="true"></i>contact</a></li>
+                <li><a href="#description"><i class="fa fa-trophy" aria-hidden="true"></i>reword</a></li>
+                <li><a href="#pictures"><i class="fa fa-comment" aria-hidden="true"></i>pictures</a></li>
             </ul>
         </div>
         
@@ -78,19 +83,93 @@
     </div>
     <!-- end of aabout page -->
 
+
+    <!-- ============form of order========= -->
     <div class="form_container" id="form">
         <h1>Request one to have great work to day</h1>
         <div class="form_center">
             <div class="form">
-                <input type="text" required placeholder="Frist Name">
-                <input type="text" required placeholder="Last Name">
-                <input type="number" name="phone" id="phone" placeholder="phone" required>
+                <h2>please fill form to get yours</h2>
+                <input type="text" required placeholder="fell name Name">
+                <input type="number" required placeholder="cups you need">
+                <input type="text" name="phone" id="phone" placeholder="phone" required>
                 <input type="email" required placeholder="Email">
+                <select name="gender" id="gender" aria-placeholder="gender">
+                    <option value="">choose gender</option>
+                    <option value="femal">femal</option>
+                    <option value="male">male</option>
+                    <option value="cups">none</option>
+                </select>
                 <div class="submit">
-                    <button>submit</button>
+                    <button type="submit">send older</button>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- ===============end of order============ -->
+
+    <!-- ===========order discription pop up====== -->
+    <div id="description" class="popupOrder">
+        <h1>order list of to day</h1>
+        <div class="older_list">
+            <div class="information">
+                <div class="pic">
+                    <i class="fa fa-male" aria-hidden="true"></i>
+                    <i class="fa fa-female" aria-hidden="true"></i>  
+                </div>
+                <div class="name">
+                </div>
+                <div class="timeStamp">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =========gallery of the coff shop========== -->
+
+    <div class="garely" id="pictures">
+        <div class="divp">
+            <img src="./images/pic 1.jpg" alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/pic 2.jpg" alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/pic 3.jpg" alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/pic 4.jpg" alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/pic 5.jpg" alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/pic 8.jpg" alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/pic 7.jpg " alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/pic 8.jpg" alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/pic 8.jpg" alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/gif 1.gif" alt="">
+        </div>
+        <div class="div9">
+            <img src="./images/pic 1.jpg" alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/pic 4.jpg" alt="">
+        </div>
+        <div class="divp">
+            <img src="./images/pic 6.jpg" alt="">
+        </div>
+        
     </div>
     <script src="./coffee.js"></script>
 </body>
