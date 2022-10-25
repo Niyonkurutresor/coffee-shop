@@ -327,6 +327,18 @@ button{
     width: 30%;
     height: 100%;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.picture_of_user img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.fa-female{
+    color: white;
 }
 .older_list .name{
     background-color: aliceblue;

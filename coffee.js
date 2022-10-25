@@ -88,7 +88,7 @@ sendRequest.addEventListener("click",()=>{
 
     firstP.innerText=user.value;
     secondP.innerText= "you nee:"+quantity.value+" cups and your older is NO: " +counter;
-     picture_of_user.innerText = gender.value;  
+     picture_of_user.innerHTML = '<img src="./images/pic 1.jpg" alt="">'  
 
 
     if((user.value!=="")&&(quantity.value!=="")&&(userEmail.value!=="")){
