@@ -87,7 +87,7 @@ body{
     justify-content:space-around;
     align-items: center; 
     margin-top: 1rem; 
-    z-index: 5;
+    z-index: 3;
 }
 .base_nav .fa{
     font-size: 5rem;
@@ -155,6 +155,7 @@ body{
 }
 
 /* video */
+
 video{
     position: absolute;
     top: -30vh;
@@ -196,15 +197,16 @@ video{
 
 /* about us  */
 .about_container{
-    
     width: 80%;
     min-height: 90vh;
     margin: 10rem auto 3rem auto;
     padding-top: 5rem;
 }
+
 .about_container h1{
     text-align: center;
 }
+
 .about_container > div{
     margin-bottom: 3rem;
     display: flex;
@@ -231,7 +233,7 @@ video{
 /* form  with map*/
 .form_container{
     width: 100vw;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     height: fit-content;
     margin: 10rem auto 3rem auto;
     padding-top: 5rem; 
@@ -246,7 +248,7 @@ video{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 70vh;
+    height: fit-content;
     width: 100%;
     
 }
@@ -294,13 +296,13 @@ font-size: var(--textSize);
 
 button{
     background-color: transparent;
-    width: 20rem;
+    width: 50%;
     height: 2rem;
     border-radius: 5px;
     border: none;
     box-shadow: 0 0 4px;
     color: var(--color2);
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 
@@ -320,8 +322,7 @@ button{
     margin-top: 1rem;
     width: 50%;
     min-height: fit-content;
-    height: 8rem;
-    width: 30rem;
+    height: 10rem;
     background-color:rgba(0,0,0,.6);
     border-radius: .8rem;
     display: flex;
@@ -332,25 +333,20 @@ button{
 .older_list .picture_of_user{
     width: 30%;
     height: 100%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: red;
+    align-items: center;    
 }
 .picture_of_user img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
-.fa-female{
-    color: white;
-}
+
 .older_list .name{
     background-color: aliceblue;
-    border-top-right-radius: .8rem;
-    border-bottom-right-radius: .8rem;
-    width: 70%;
+    width: 60%;
     height: 100%;
     display: grid;
     justify-content: center;
@@ -359,6 +355,19 @@ button{
 }
 .name{
     font-size: x-large;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.buttons button{
+    width: 80%;
+    margin-top: 1rem;
+}
+.buttons button:hover{
+    color: orangered;
 }
 
 
@@ -381,6 +390,7 @@ button{
 }
 .garely img{
     max-width: 100%;
+    height: 100%;
 }
 .minimize_picture{
     color: red;
@@ -402,8 +412,8 @@ button{
 }
 .contact_form .inputs{
     margin-top:2rem ;
-    background-color: orange;
-    font-size: var(--textSize)
+    background-color:rgba(0,0,0,.6);
+    
 }
 .inputs input{
     display: block;
@@ -414,11 +424,14 @@ button{
     padding: 2rem;
     width: 100%;
     height: 2rem;
+    font-size: var(--textSize)
+
 }
 .inputs textarea{
     width: 100%;
     background: transparent;
     border: none;
+    border-bottom: 2px double whitesmoke;
     outline: none;
     padding: 2rem;
 }
@@ -427,6 +440,8 @@ button{
     margin-bottom: 1rem;
 }
 
+
+/* footer */
 footer{
     height: 50vh;
     margin-top: 1rem;
@@ -434,9 +449,67 @@ footer{
 }
 
 
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.7);
+    padding: 2rem;
+    height: 30vh;
+    color: white;
 
+}
 
+footer h2{
+    color: aqua;
+    margin-bottom: 1rem;
+}
+footer p{
+    margin-bottom: .5rem;
+}
+footer .fa{
+    display: block;
+    margin-bottom:.5rem;
+    color: aqua;
+}
 
+@media screen and (max-width:760px) {
+    .heading{
+        background-image: url(./images/pic\ 3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    video{
+        display: none;
+    }
+    
+    .topPart, .bottomPart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_container .bottomPart img{
+        order: 2;
+    }
+    .about_container .bottomPart p{
+        order: 1;
+    }
+    .form{
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+    .older_list{
+        width: 80%;
+        min-width: 35rem;
+    }
+    .garely{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .garely img{
+    width: 35rem;
+    }
+}
 
 
 
@@ -459,21 +532,5 @@ footer{
     margin-left: 10vw; */
 }
 
-footer{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(0,0,0,0.7);
-    padding: 2rem;
-    height: 30vh;
-    color: white;
 
-}
-
-footer h2{
-    color: aqua;
-    margin-bottom: 1rem;
-}
-footer p{
-    margin-bottom: .5rem;
-}
 

@@ -70,16 +70,43 @@ sendRequest.addEventListener("click",()=>{
     picture_of_user .classList.add("picture_of_user");
     older_list.append(picture_of_user)
 
+    // div contain user name and description
     let name = document.createElement("div");
     name.classList.add("name")
     older_list.append(name)
     
-
+    // pragraph indicate name of user
     let firstP = document.createElement("p");
     name.append(firstP)
     
+    // paragragy of order description
     let secondP = document.createElement("p");
     name.append(secondP);
+
+    // division contain button
+    let buttons = document.createElement("div");
+    buttons.classList.add("buttons");
+    older_list.append(buttons);
+
+    // create delete button
+    let button1= document.createElement("button");
+    button1.innerText= "delet"
+    buttons.append(button1);
+
+    // create update button
+    let button2 = document.createElement("button");
+    button2.innerText = "update";
+    buttons.append(button2);
+
+    
+    // delet and updatae buttons funcitionality
+        // delet funcitionality
+        button1.addEventListener("click",()=>{
+            older_list.remove();
+        })
+
+
+
 
     let user = document.querySelector("#name");
     let quantity = document.querySelector("#quantity");
@@ -98,6 +125,9 @@ sendRequest.addEventListener("click",()=>{
         user.value=""
         quantity.value=""
         userEmail.value=""
+    }
+    else{
+        alert("you must fill all field")
     }
 
    
