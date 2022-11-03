@@ -7,6 +7,13 @@ window.addEventListener("load",()=>{
     preloader.style.display = "none";
 })
 
+// // black and white themo
+// let demo = document.querySelector(".fa-adjust");
+// let entireDocument = document.querySelector("HTML")
+// demo.addEventListener("click",()=>{
+//     entireDocument.style.backgroundColor = "black";
+//     entireDocument.style.color = "white";
+// })
 
 // aside navigation hide and show
 let bagle = document.querySelector(".fa-bars"); 
@@ -38,7 +45,7 @@ let minimizePicture = document.querySelector(".minimize_picture");
 for(let i=0;i< picture.length; i++)
 picture[i].addEventListener("click",()=>{
     
-    picture[i].classList.toggle("try");
+    picture[i].classList.add("try");
     minimizePicture.style.display="block";
    
 
