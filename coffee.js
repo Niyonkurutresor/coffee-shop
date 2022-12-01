@@ -77,6 +77,20 @@ sendRequest.addEventListener("click",()=>{
     picture_of_user .classList.add("picture_of_user");
     older_list.append(picture_of_user)
 
+    // let functionToPerform = (elementname,elementType,classToAddOn,listToAppendOn)=>{
+    //     this.elementname = elementname;
+    //     this.elementType = elementType;
+    //     this.classToAddOn = classToAddOn;
+    //     this.listToAppendOn = listToAppendOn;
+
+    //     this.createElements = ()=>{
+    //         let elementname = document.createElement(elementType);
+    //         elementname.classList.add(classToAddOn);
+    //         listToAppendOn.append(elementname)
+    //     }
+    // }
+ 
+    // functionToPerform(divisionName,"div","name",older_list);
     // div contain user name and description
     let name = document.createElement("div");
     name.classList.add("name")
@@ -90,7 +104,7 @@ sendRequest.addEventListener("click",()=>{
     let secondP = document.createElement("p");
     name.append(secondP);
 
-    // division contain button
+    // division that contain button
     let buttons = document.createElement("div");
     buttons.classList.add("buttons");
     older_list.append(buttons);
@@ -139,5 +153,3 @@ sendRequest.addEventListener("click",()=>{
 
    
 })
-
-
