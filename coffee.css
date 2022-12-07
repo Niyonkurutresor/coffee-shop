@@ -16,10 +16,11 @@
 |              variables           |
 \--------------------------------*/
 :root{
-    --backgroundColor1: rgba(255, 255, 255,.6);
+    --backgroundColor1: rgba(255, 255, 255,.1);
     --color1: rgb(78, 76, 76);
     --backgroundColor2:rgba(0,0,0,.6);
     --color2:whitesmoke;
+    --aqua: orange;
     --fontFamily: sans-serif;
     --largeSize:xx-large;
     --textSize :large;
@@ -57,8 +58,8 @@ body{
         width:9rem;
         height:9rem;
         border:1rem solid rgba(255, 2, 239, 0.7);
-        border-left-color: aqua;
-        border-top-color:aqua;
+        border-left-color:var(--aqua);
+        border-top-color:var(--aqua);
         border-radius:50%;
         animation: rotate 800ms infinite linear;
         z-index: 999;
@@ -133,7 +134,7 @@ body{
 }
 .socialMedia_links .fa{
     margin-left: 2rem;
-    color: aqua;
+    color: var(--aqua);
 }
 
 /* price */
@@ -187,10 +188,10 @@ video{
     font-size: 2rem;
     margin-bottom: 3rem;
     text-transform: capitalize;
-    border-bottom: dotted aqua;
+    border-bottom: dotted var(--aqua);
 }
 .aside_navigation a{
-    color: aqua;
+    color: var(--aqua);
     
 }
 
@@ -460,7 +461,7 @@ footer{
 }
 
 footer h2{
-    color: aqua;
+    color: var(--aqua);
     margin-bottom: 1rem;
 }
 footer p{
@@ -469,7 +470,7 @@ footer p{
 footer .fa{
     display: block;
     margin-bottom:.5rem;
-    color: aqua;
+    color: var(--aqua);
 }
 
 @media screen and (max-width:760px) {
